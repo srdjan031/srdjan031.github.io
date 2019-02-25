@@ -16,12 +16,10 @@ $(document).ready(function () {
 
   $('.nav-link').click(function () {
     if ($(window).width() > 992) {
-      document.title = 'TITL';
       $('.nav-button').removeClass('change');
       $('.navbar-collapse').collapse('hide');
     }
     else {
-      document.title = 'blah';
       $('.nav-button').toggleClass('change');
       $('.navbar-collapse').collapse('hide');
     }
