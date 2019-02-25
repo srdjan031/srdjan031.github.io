@@ -1,4 +1,14 @@
 $(document).ready(function () {
+
+  $('#dugmeMeni').click(function () {
+      if ($('#dugmeMeni').hasClass("change")) {
+        $('.nav-menu').removeClass('custom-navbar2');
+      } else {
+        $('.nav-menu').addClass('custom-navbar2');
+        // $('.nav-menu').removeClass('custom-navbar');
+      }
+  });
+
   $('.nav-button').click(function () {
     $('.nav-button').toggleClass('change');
     $('.navbar-collapse').collapse('hide');
