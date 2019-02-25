@@ -25,7 +25,9 @@
     function GetMap() {
       map = new Microsoft.Maps.Map('#myMap', {
         credentials: "FG13q4coDGNkEEYgtHP3~CjHS13XXIYrXSAnyi0u86Q~Agu6Uc3KDV1cavtv_65JaKqW96OiHjR1CAHMfaWpvwAg6X6rKq-lu4K-PqbVwD13",
-        center: new Microsoft.Maps.Location(43.859360, 19.839010)
+        center: new Microsoft.Maps.Location(43.859360, 19.839010),
+        mapTypeId: Microsoft.Maps.MapTypeId.canvasLight,
+        zoom: 17, enableClickableLogo: false, enableSearchLogo: false, showCopyright: false
       });
 
       var center = map.getCenter();
@@ -148,7 +150,7 @@
     <!-- banner -->
     <!-- <div class="text-light text-md-right text-center banner" style="margin-top:-1rem;"> -->
     <div class="text-light text-md-right text-center banner">
-      <h1 class="display-4 banner-heading">Turn your data into a business advantage</h1>
+      <h2 class="display-4 banner-heading">Turn your data into a business advantage</h2>
       <!-- <p class="lead banner-par" style="font-size:2rem;color:#196eb4">Turn your data into a business advantage.</p> -->
       <!-- <p class="lead banner-par" style="font-size:2rem;color:#196eb4">Turn your data into a business advantage.</p> -->
       <!-- <p class="lead banner-par" style="font-size:2rem;color:#ffffff">Turn your data into a business advantage</p> -->
@@ -162,31 +164,31 @@
     <div class="container-fluid">
       <!-- title -->
       <div class="row text-white text-center">
-        <div class="col m-4">
+        <div class="col mx-0 px-0">
           <h1 class="display-4 mb-4">Our Work</h1>
           <div class="underline mb-4"></div>
-          <p class="lead">We aim to empower your business by utilizing the full potential of your data,
+          <p class="lead mx-0 px-0">We aim to empower your business by utilizing the full potential of your data,
             delivering complete solutions by thoughtfully applying methods of classical statistics, artificial
             intelligence and machine learning.</p>
         </div>
       </div>
       <!-- end of title -->
-      <div class="row my-5">
-        <div class="col-md-4 text-center">
+      <div class="row my-5 mx-0 px-0">
+        <div class="col-md-4 mx-0 px-0 text-center">
           <i class="fal fa-cogs fa-fw fa-5x text-warning mb-4"></i>
           <h1 class="text-white mb-3">Creativity</h1>
           <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic perferendis dolor vitae
             sed, quae officiis exercitationem quaerat? Fugit excepturi exercitationem inventore, repellendus architecto
             illum!</p>
         </div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 mx-0 px-0 text-center">
           <i class="fal fa-chart-bar fa-fw mb-4" style="font-size:5rem;color:#196eb4"></i>
           <h1 class="text-white mb-3">Quality</h1>
           <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic perferendis dolor vitae
             sed, quae officiis exercitationem quaerat? Fugit excepturi exercitationem inventore, repellendus architecto
             illum!</p>
         </div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 mx-0 px-0 text-center">
           <i class="fal fa-industry-alt fa-fw text-success mb-4" style="font-size:5rem;color:#196eb4"></i>
           <h1 class="text-white mb-3">Experience</h1>
           <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea hic perferendis dolor vitae
@@ -197,10 +199,10 @@
     </div>
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-5 text-center">
+        <div class="col-lg-5 text-center mx-0 px-0">
           <img src="images/camera.png" width="350" class="img-fluid camera-img">
         </div>
-        <div class="col-lg-7 text-white text-lg-right text-center mission-text">
+        <div class="col-lg-7 text-white text-lg-right text-center mission-text mx-0 px-0">
           <h1>We know what we do</h1>
           <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tempora itaque obcaecati
             voluptas? Perferendis voluptate accusantium eum sit deleniti harum, assumenda vitae! Cupiditate eos iusto ab
@@ -216,16 +218,16 @@
     <div class="container-fluid">
       <!-- title -->
       <div class="row text-white text-center">
-        <div class="col m-4">
+        <div class="col mx-0 px-0">
           <h1 class="display-4 mb-4">Collection</h1>
           <div class="underline mb-4"></div>
-          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium inventore, sint quisquam
+          <p class="lead mx-0 px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium inventore, sint quisquam
             fugiat pariatur culpa officia. Eveniet omnis quia tempora.</p>
         </div>
       </div>
       <!-- end of title -->
       <div class="row">
-        <div class="col-lg-4 col-sm-6 my-5">
+        <div class="col-lg-4 col-sm-6 my-5 mx-0 px-0">
           <div class="card border-0 card-shadow">
             <img src="images/nature.jpeg" class="card-img">
             <div class="card-img-overlay">
@@ -283,7 +285,7 @@
     <div class="container-fluid">
       <!-- title -->
       <div class="row text-muted text-center">
-        <div class="col m-4">
+        <div class="col mx-0 px-0">
           <h1 class="display-4 mb-4">Gallery</h1>
           <div class="underline-dark mb-4"></div>
           <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium inventore, sint quisquam
@@ -305,7 +307,7 @@
         </li>
       </ul>
       <div class="container-fluid">
-        <div class="d-flex flex-wrap justify-content-center">
+        <div class="d-flex flex-wrap justify-content-center mx-0 px-0">
           <div class="filter new"><img src="images/img1.jpeg" width="300"></div>
           <div class="filter free"><img src="images/img2.jpeg" width="300"></div>
           <div class="filter pro"><img src="images/img3.jpeg" width="300"></div>
@@ -330,10 +332,10 @@
 
   <!-- customers -->
   <section class="p-5 customers">
-    <div class="container-fluid">
+    <div class="container-fluid mx-0 px-0">
       <!-- title -->
-      <div class="row text-white text-center">
-        <div class="col m-4">
+      <div class="row text-white text-center mx-0 px-0">
+        <div class="col mx-0 px-0">
           <h1 class="display-4 mb-4">Happy Customers</h1>
           <div class="underline mb-4"></div>
           <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium inventore, sint quisquam
@@ -435,19 +437,19 @@
 
   <!-- pricing -->
   <section class="bg-light text-center p-5">
-    <div class="container-fluid">
+    <div class="container-fluid mx-0 px-0">
       <!-- title -->
       <div class="row text-muted text-center">
-        <div class="col m-4">
+        <div class="col mx-0 px-0">
           <h1 class="display-4 mb-4">Join Us</h1>
           <div class="underline-dark mb-4"></div>
-          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium inventore, sint quisquam
+          <p class="lead mx-0 px-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium inventore, sint quisquam
             fugiat pariatur culpa officia. Eveniet omnis quia tempora.</p>
         </div>
       </div>
       <!-- end of title -->
       <div class="row align-items-center">
-        <div class="col-lg-4">
+        <div class="col-lg-4 mx-0 px-0">
           <div class="card card-1 text-light py-4 my-4 mx-auto">
             <div class="card-body">
               <h5 class="text-uppercase font-weight-bold mb-5">Monthly Membership</h5>
@@ -462,7 +464,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 mx-0 px-0">
           <div class="card card-2 text-light py-4 my-4 mx-auto">
             <div class="card-body">
               <h5 class="text-uppercase font-weight-bold mb-5">Unlimited Access</h5>
@@ -478,7 +480,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 mx-0 px-0">
           <div class="card card-3 text-light py-4 my-4 mx-auto">
             <div class="card-body">
               <h5 class="text-uppercase font-weight-bold mb-5">Annual Membership</h5>
@@ -504,14 +506,14 @@
 
   <!-- contact -->
   <section class="contact p-5" id="kontakt">
-    <div class="container-fluid">
+    <div class="container-fluid mx-0 px-0">
       <div class="row">
-        <div class="col-lg-5 pb-4">
+        <div class="col-lg-0 pb-4 mx-0 px-0">
           <h3 class="display-4 mb-0 text-white text-center">Contact us</h3>
           <p class="lead text-muted text-justify">By filling up the form bellow you can contact us with any question or
             an
             interesting proposal.</p>
-          <form class="contact-form">
+          <form class="contact-form mx-0 px-0">
             <div class="form-group py-4">
               <input type="text" class="form-control my-2 p-2 input" placeholder="Name">
               <label for="name" class="label">Name</label>
@@ -536,15 +538,15 @@
 
   <!-- footer -->
   <footer class="bg-dark px-5">
-    <div class="container-fluid">
+    <div class="container-fluid mx-0 px-0">
       <div class="row text-light py-4">
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-6 mx-0 px-0">
           <h5 class="pb-3">About Us</h5>
           <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nobis dicta molestiae id
             laboriosam natus repudiandae, ducimus illum veritatis perspiciatis possimus, at facere debitis accusantium?
           </p>
         </div>
-        <div class="col-lg-2 col-sm-6">
+        <div class="col-lg-2 col-sm-6 mx-0 px-0">
           <h5 class="pb-3">Visit Us</h5>
           <ul class="list-unstyled">
             <li>
@@ -570,7 +572,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-2 col-sm-6">
+        <div class="col-lg-2 col-sm-6 mx-0 px-0">
           <h5 class="pb-3">Need Help?</h5>
           <ul class="list-unstyled">
             <li>
@@ -587,7 +589,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-lg-4 col-sm-6">
+        <div class="col-lg-4 col-sm-6 mx-0 px-0">
           <h5 class="pb-3">Stay Connected</h5>
           <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque accusamus dolores iste
             praesentium assumenda est quia accusantium corrupti ipsam inventore.</p>
